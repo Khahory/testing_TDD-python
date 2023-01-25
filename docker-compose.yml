@@ -1,0 +1,11 @@
+# camos a construir los contenedores de manera mas vacana
+
+#creado version
+version: '3.9'
+
+#creado servicio (o contenedor)
+services:
+  app_python: # el ejecutable el Dockerfile que esta en root
+    build: .
+    volumes:
+      - .:/usr/src/app # live reload
